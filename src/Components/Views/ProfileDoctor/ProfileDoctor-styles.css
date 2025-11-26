@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --gray-input: #e4e7f1;
+  --gray-form: #f5f7fe;
+  --light-green: #2fca76;
+  --dark-gray-icons: #40434f;
+  --error-color: #db324d;
+  --pastel-green: #e9fbf2;
+}
+
+.profile-doctor-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  height: 90vh;
+  font-family: "Poppins", sans-serif;
+  padding: 2rem 3rem 5rem 3rem;
+  word-break: break-all;
+  hyphens: auto;
+}
+
+.profile-doctor-container .column-one {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+.profile-doctor-container .column-one .doctor-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.profile-doctor-container .column-one .doctor-card-container img {
+  height: 135px;
+  width: 135px;
+  border-radius: 50%;
+}
+
+.profile-doctor-container .column-one .doctor-card-container .username {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.profile-doctor-container .column-one .doctor-card-container .username span {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #40434f;
+}
+
+.profile-doctor-container .column-one .paciente-description-container {
+  width: 75%;
+}
+
+.profile-doctor-container
+  .column-one
+  .paciente-description-container
+  .save-changes-button {
+  width: 100%;
+  align-self: center;
+}
+
+.profile-doctor-container .column-two {
+  border-left: 0.2px solid rgba(182, 182, 182, 0.705);
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  height: 70vh;
+}
+
+.profile-doctor-container .column-two .doctor-stats-container {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  justify-items: center;
+  grid-gap: 15px;
+}
+
+.item-container {
+  width: 95%;
+  text-align: start;
+  padding: 1.5rem;
+  border-radius: 20px;
+  background-color: var(--gray-form);
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+@media (min-width: 39.0625rem) {
+}
+
+@media (min-width: 50rem) {
+}
+
+@media (max-width: 39rem) {
+  .profile-doctor-container {
+    height: 200vh;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0rem;
+    justify-content: center;
+  }
+
+  .profile-doctor-container .column-one {
+    height: 85vh;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+
+  .profile-doctor-container .column-two {
+    width: 100%;
+    padding: 0;
+    height: 120vh;
+  }
+  .profile-doctor-container .column-two .doctor-stats-container {
+    grid-template-columns: repeat(1, 1fr);
+    word-break: break-all;
+    hyphens: auto;
+    grid-gap: 2rem;
+  }
+}
+
+@media (max-width: 39rem) and (max-height: 57.5rem) {
+  .profile-doctor-container {
+    padding: 0;
+    justify-content: center;
+  }
+  .profile-doctor-container .column-one {
+    height: 100vh;
+    justify-content: space-around;
+  }
+
+  .profile-doctor-container .column-two {
+    width: 100%;
+    padding: 0;
+    height: 120vh;
+  }
+
+  .profile-doctor-container .column-one .doctor-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    word-break: break-all;
+    hyphens: auto;
+    border-bottom: 0.2px solid rgba(160, 160, 160, 0.641);
+    width: 90%;
+  }
+
+  .profile-doctor-container .column-one .doctor-card-container .username {
+    word-break: break-all;
+    hyphens: auto;
+    font-size: 1.2rem;
+  }
+
+  .profile-doctor-container .column-one .paciente-description-container {
+    width: 90%;
+  }
+
+  .profile-doctor-container .column-two .doctor-stats-container {
+    border-top: 0.2px solid rgba(158, 158, 158, 0.701);
+  }
+}
+
+@media (max-height: 30rem) and (max-width: 39rem) {
+  .profile-doctor-container {
+    height: auto;
+  }
+
+  .profile-doctor-container .column-two {
+    min-height: 120vh;
+  }
+}
+
+@media (max-height: 30rem) {
+  .profile-doctor-container {
+    min-height: 310vh;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0rem;
+    justify-content: space-around;
+    padding-top: 1rem;
+  }
+
+  .profile-doctor-container .column-one {
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+  }
+
+  .profile-doctor-container .column-two {
+    width: 100%;
+    padding: 0;
+    height: 50%;
+  }
+
+  .profile-doctor-container .column-two .doctor-stats-container {
+    word-break: break-all;
+    hyphens: auto;
+    padding: 0;
+    border-top: 0.2px solid rgba(157, 157, 157, 0.646);
+    margin: 0.5rem;
+  }
+}

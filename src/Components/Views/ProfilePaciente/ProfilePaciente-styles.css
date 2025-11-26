@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --gray-input: #e4e7f1;
+  --gray-form: #f5f7fe;
+  --light-green: #2fca76;
+  --dark-gray-icons: #40434f;
+  --error-color: #db324d;
+  --pastel-green: #e9fbf2;
+}
+.profile-paciente-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 95vh;
+  font-family: "Poppins", sans-serif;
+  padding: 0rem 3rem 5rem 3rem;
+}
+
+.profile-paciente-container .container-one {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.profile-paciente-container .container-two {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.profile-paciente-container .doctor-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5rem;
+}
+.profile-paciente-container .doctor-card-container .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-paciente-container .doctor-card-container .container img {
+  height: 6.3rem;
+  width: 6.3rem;
+  border-radius: 31.25rem;
+  object-fit: cover;
+}
+
+.profile-paciente-container
+  .doctor-card-container
+  .container
+  .doctor-description {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+}
+
+.profile-paciente-container .container-one .profile-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px;
+  min-width: 40%;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.profile-paciente-container .container-one .profile-card-container img {
+  position: relative;
+  top: 0;
+  height: 10.9375rem;
+  width: 10.9375rem;
+}
+
+.profile-paciente-container .container-one .profile-card-container .username {
+  font-size: 1.6rem;
+}
+
+.profile-paciente-container .container-two .paciente-description-container {
+  padding: 0.625rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.edit-input-icon {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bool-button-si {
+  border-radius: 0.5rem;
+  background-color: var(--light-green);
+  color: white;
+  border: none;
+}
+
+.bool-button-no {
+  border-radius: 0.5rem;
+  background-color: gray;
+  color: rgb(255, 255, 255);
+  border: none;
+}
+
+.save-changes-button {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem 2rem 0.7rem 2rem;
+  margin-top: 0.8rem;
+  background-color: var(--light-green);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  cursor: pointer;
+  text-align: center;
+}
+
+.save-changes-button:active {
+  background-color: #92cdac;
+}
+
+.container-two .contenedor {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-two .contenedor .turnos-container {
+  width: 100%;
+  height: 21rem;
+  overflow-y: auto;
+}
+
+.turnos-container::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.turnos-container::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+.turnos-container::-webkit-scrollbar-button:increment,
+.turnos-container::-webkit-scrollbar-button {
+  display: none;
+}
+
+.turnos-container::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.turnos-container::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+.turnos-container::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.item-body {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-content: baseline;
+}
+
+.item-body ul {
+  list-style-type: none;
+  align-self: start;
+  margin: 0;
+}
+
+@media (min-width: 39.0625rem) {
+  .profile-paciente-container .container-one {
+    justify-content: space-evenly;
+  }
+  .profile-paciente-container .container-one .profile-card-container {
+    width: 55%;
+  }
+
+  .profile-paciente-container .container-one .profile-card-container .username {
+    font-size: 1.1rem;
+  }
+
+  .profile-paciente-container .container-one .profile-card-container img {
+    height: 120px;
+    width: 120px;
+  }
+
+  .profile-paciente-container .doctor-card-container {
+    margin: 0;
+    align-items: center;
+  }
+
+  .profile-paciente-container .doctor-card-container .container img {
+    height: 90px;
+    width: 90px;
+  }
+
+  .profile-paciente-container .doctor-card-container h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .profile-paciente-container .container-two .paciente-description-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 50rem) {
+  .profile-paciente-container .container-one {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .profile-paciente-container .container-one .profile-card-container {
+    width: 40%;
+  }
+
+  .profile-paciente-container .container-one .profile-card-container .username {
+    font-size: 1.6rem;
+  }
+
+  .profile-paciente-container .container-two .paciente-description-container {
+    width: 40%;
+  }
+  .profile-paciente-container .container-one .profile-card-container img {
+    height: 12rem;
+    width: 12rem;
+  }
+
+  .profile-paciente-container .doctor-card-container {
+    margin-right: 5rem;
+  }
+}
+
+@media (max-width: 39rem) {
+  .profile-paciente-container {
+    padding: 0.5rem;
+    min-height: 130vh;
+  }
+
+  .profile-paciente-container .container-one {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-paciente-container .container-one .profile-card-container {
+    width: 100%;
+  }
+
+  .profile-paciente-container .container-one .profile-card-container img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-paciente-container .container-one .profile-card-container .username {
+    font-size: 1.4rem;
+  }
+
+  .profile-paciente-container .doctor-card-container {
+    margin: 0;
+    align-self: flex-start;
+  }
+
+  .profile-paciente-container .container-two {
+    flex-direction: column;
+  }
+
+  .profile-paciente-container .container-two .paciente-description-container {
+    width: 100%;
+  }
+
+  .container-two .contenedor {
+    width: 100%;
+  }
+  .profile-paciente-container .doctor-card-container h3 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
+@media (max-height: 30rem) and (max-width: 39rem) {
+  .profile-paciente-container {
+    height: 260vh;
+    margin: 0;
+  }
+
+  .profile-paciente-container .container-two {
+    padding: 0;
+  }
+
+  .profile-paciente-container .container-one .profile-card-container {
+    width: 100% !important;
+  }
+
+  .profile-paciente-container .container-two .paciente-description-container {
+    width: 100% !important;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-height: 30rem) {
+  .profile-paciente-container {
+    padding: 0.5rem;
+    min-height: 155vh;
+  }
+  .profile-paciente-container .container-two .paciente-description-container {
+    width: 45%;
+  }
+
+  .profile-paciente-container .container-one .profile-card-container {
+    padding: 0;
+
+    width: 55%;
+  }
+
+  .profile-paciente-container .container-one .profile-card-container img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .profile-paciente-container .container-one .profile-card-container .username {
+    font-size: 1.4rem;
+  }
+
+  .profile-paciente-container
+    .container-one
+    .profile-card-container
+    .username
+    span {
+    font-size: 0.8rem;
+  }
+  .profile-paciente-container .doctor-card-container {
+    margin-right: 25px;
+  }
+
+  .profile-paciente-container .doctor-card-container h3 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .profile-paciente-container .doctor-card-container .container img {
+    height: 90px;
+    width: 90px;
+  }
+}

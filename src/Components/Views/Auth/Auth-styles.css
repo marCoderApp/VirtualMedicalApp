@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --gray-input: #e4e7f1;
+  --gray-form: #f5f7fe;
+  --light-green: #2fca76;
+  --dark-gray-icons: #40434f;
+  --error-color: #db324d;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 88vh;
+  font-family: "Poppins", sans-serif;
+  padding: 40px;
+}
+
+.register-form-container {
+  width: 40%;
+  border-radius: 1.25rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.5rem;
+  background-color: var(--gray-form);
+}
+
+.register-form-container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.register-form-container form div {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-container .register-form-container form div .error-border {
+  border: 1px solid var(--error-color);
+}
+
+.register-form-container form div .error {
+  font-size: 12px;
+  color: var(--error-color);
+  text-align: start;
+}
+
+.register-form-container form div input {
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  width: 100%;
+  margin: 0.3125rem;
+  align-items: center;
+  border-radius: 8px;
+  background-color: var(--gray-input);
+  color: black;
+  border: none;
+}
+
+.register-form-container form .sign-button {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 4.125rem 0.75rem 4.125rem;
+  margin-top: 1.25rem;
+  background-color: var(--light-green);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.register-form-container form .sign-button:active {
+  background-color: #92cdac;
+}
+
+.register-form-container form span {
+  font-size: 14px;
+  margin: 4px;
+}
+
+.register-form-container form span a {
+  text-decoration: none;
+  color: var(--light-green);
+}
+
+@media (min-width: 39.0625rem) {
+  .auth-container {
+    padding: 0;
+  }
+
+  .register-form-container {
+    width: 90%;
+
+    text-align: center;
+  }
+}
+
+@media (min-width: 50rem) {
+  .register-form-container {
+    width: 45%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 39rem) {
+  .auth-container {
+    padding: 0;
+    min-height: 95vh;
+  }
+
+  .register-form-container {
+    width: 90%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .register-form-container form .sign-button {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media (max-height: 26rem) {
+  .auth-container {
+    height: 180vh;
+  }
+
+  .register-form-container {
+    width: 80%;
+  }
+}
